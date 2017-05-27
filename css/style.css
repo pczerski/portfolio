@@ -1,7 +1,45 @@
-section {
+header {
     background: url("img/header-background.jpg");
 /*    background-image: url('http://joemonster.org/i/2014/01/dogememe_08.jpg');*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+p, h2, h3, #menu {
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+    text-align: right;
+}
+
+#about {
+    background-color: #f9fcfe;
+}
+
+#contact {
+    background-color: #213b50;
 }
