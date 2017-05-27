@@ -1,3 +1,7 @@
-header {
-    
+section {
+    background: url("img/header-background.jpg");
+/*    background-image: url('http://joemonster.org/i/2014/01/dogememe_08.jpg');*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
