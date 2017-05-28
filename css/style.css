@@ -1,45 +1,244 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+/* Usunięcie marginesów strony */
+    margin: 0;
+}
+
 header {
-    background: url("img/header-background.jpg");
-/*    background-image: url('http://joemonster.org/i/2014/01/dogememe_08.jpg');*/
+    position: relative; 
+    top: 0;
+    height: 100vh;
+    width: 100%;    
+}
+
+#header {
+    position: absolute;
+/*  Musi być podany rozmiar, bo inaczej się nie wypozycjonuje  */
+    width: 480px;
+    height: 290px;
+    margin: auto; 
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#photo
+{
+    position: absolute;
+    background-image: url("/img/header-background.jpg");
+    height: 100vh;
+    width: 100%; 
+    margin: 0;
+    top: 0;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; 
+}
+
+li {
+    display: inline;
+    float: right;
+    padding: 5px;
+}
+
+nav {
+    position: fixed;
+    float: right;
+    margin-right: 30px;
+}
+
+a {
+    margin: 20px;
+    color: aliceblue;
+    font-weight: 400;
+}
+
+.visited {
+   color: #1ac056;
+}
+
+.active {
+    background-color: bisque;
 }
 
 p, h2, h3, #menu {
-    font-family: 'Lato', sans-serif;
     color: #291f1a;
+    font-weight: 300;
 }
 
 h1, h2, h3 {
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+    font-weight: bold;
+    font-size: 90px;
+    color: #1ac056;
+    text-align: center;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 36px;
+    font-weight: 200;
+    color: aliceblue;
+    text-align: center;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 28px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 36px;
+    text-align: left;
 }
 
 a {
     text-decoration: none;
 }
 
-#menu {
+#about {
+    width: 100%;
+    height: 400px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: #f9fcfe;
+}
+
+#left-about, #right-about {
+    display: inline-block;
+    width: 45%;
+}
+
+#left-about {
+    float: left;
+/*  Centrowanie zdjęcia  */
+    text-align: center;
+}
+
+#rigth-about {
     text-align: right;
 }
 
-#about {
-    background-color: #f9fcfe;
+#skills {
+    clear: left;
+    padding-top: 20px;
+    height: 420px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+#skills figure {
+    display: inline-block;
+    margin: 30px;
+}
+
+#portfolio {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+#portfolio #portfolio-container {
+    width: 100%;
+}
+
+#portfolio #portfolio-container .floated {
+    width: 33.3333%;
+    float: left;
+    height: 350px;
+    background-size: cover;
+    position: relative;
+}
+
+#portfolio #portfolio-container .floated .item-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 61, 79, 0.8);
+    opacity: 0;
+    transition:  all .5s ease-in-out;
+}
+#portfolio #portfolio-container .floated .item-mask:hover {
+    opacity: 1;
+}
+
+#item-1 {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#item-2{
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#item-3{
+    background-image: url('../img/portfolio4.jpg');
 }
 
 #contact {
     background-color: #213b50;
+    height: 450px;
+}
+
+#contact-data, #contact-form {
+    display: inline-block;
+    width: 45%;
+}
+
+#contact-data {
+    float: left;
+    margin-left: 30px;
+}
+
+#contact-details {
+    color: aliceblue;
+}
+
+form {
+/*    position: absolute;*/
+    padding-top: 30px;
+    width: 450px;
+    background: #213b50;
+}
+
+input, textarea {
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: #2b4a64;
+    border-width: 0px;
+    border-color: #ffffff;
+    font-size: 14px;
+    color: aliceblue;
+    width: 400px;
+}
+
+.button {
+    background-color: #1ac056;
+    color: aliceblue;
+    width: 90px;
+    height: 45px;
+}
+
+footer {
+    height: 30px;
+    background-color: #1c2a44;
+    
+}
+
+#copyright {
+    font-size: 14px;
+    color: aliceblue;
+    margin-left: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }

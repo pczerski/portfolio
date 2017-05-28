@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>portfolio</title>
+    <title>Moje portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
+
 <body>
-<!-- Nagłówek  menu -->
-  <header>
-    <div id="menu">
-        <a href="#about">o mnie</a>
-        <a href="#skills">umiejętności</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contact">kontakt</a>
-    </div>
-    <div><h1>Jan Nowak</h1></div>
-    <div><h2>Front-End Developer</h2></div>
-  </header> 
-  
-<!-- O mnie -->
-  <section id="about">
-      <div><h3>O mnie</h3></div>
-  </section>
-  
-<!-- Umiejętności -->
-  <section id="skills">
-      <div><h3>Moje umiejętności</h3></div>
-  </section>
-  
-<!-- Portfolio -->
-  <section id="portfolio">
-      <div><h3>Moje portfolio</h3></div>
-  </section>
-  
-<!-- Kontakt -->
-  <section id="contact">
-      <div><h3>Kontakt</h3></div>
-  </section>
-  
-<!-- Stopka -->
-  <footer>
-      <div><p>Copyright Jan Nowak</p></div>
-  </footer>
+    <!-- Nagłówek  menu -->
+    <header>
+        <div id="photo">
+            <nav id="menu">
+                <ul>
+                    <li><a href="#about">o mnie</a></li>
+                    <li><a href="#skills">umiejętności</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">kontakt</a></li>
+                </ul>
+            </nav>
+            <div id="header">
+                <h1><span style="color:aliceblue; font-weight: 200">Jan</span> Nowak</h1>
+                <h2>Front-End Developer</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- O mnie -->
+    <section id="about">
+        <h3>O <span style="color:#1ac056; font-weight: 500">mnie</span></h3>
+        <figure id="left-about">
+            <img src="img/jan-nowak.jpg" alt="Jan Nowak" width="250">
+        </figure>
+        <article id="right-about">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos velit a temporibus nobis rem quaerat dolor animi tenetur libero, fugiat voluptatum incidunt amet inventore quod, dignissimos deserunt maiores fugit nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga necessitatibus esse natus quo pariatur, voluptatibus quidem consectetur facere. Perspiciatis iste, doloremque consequuntur saepe nostrum voluptas nesciunt, molestiae voluptatibus quos quam.</p>
+        </article>
+    </section>
+
+    <!-- Umiejętności -->
+    <section id="skills">
+        <h3>Moje <span style="color:#1ac056; font-weight: 500">umiejętności</span></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae commodi error inventore dignissimos, non deleniti eaque iure impedit optio. Unde quo voluptas quasi accusamus repellat eius consectetur asperiores ipsam.</p>
+        <figure>
+            <img src="icons/html5.png" alt="">
+            <figcaption>HTML5</figcaption>
+        </figure>
+        <figure>
+            <img src="icons/css3.png" alt="">
+            <figcaption>CSS3</figcaption>
+        </figure>
+        <figure>
+            <img src="icons/js.png" alt="">
+            <figcaption>JS</figcaption>
+        </figure>
+        <figure>
+            <img src="icons/jquery.png" alt="">
+            <figcaption>jQuery</figcaption>
+        </figure>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h3>Moje <span style="color:#1ac056; font-weight: 500">portfolio</span></h3>
+        <div id="portfolio-container">
+            <div class="floated" id="item-1">
+                <div class="item-mask"></div>
+<!--      border content h3 p fa          -->
+            </div>
+            <div class="floated" id="item-2">
+                <div class="item-mask"></div>
+            </div>
+            <div class="floated" id="item-3">
+                <div class="item-mask"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact">
+        <article id="contact-data">
+            <h4><span style="color:aliceblue; font-weight: 300">Jan </span><span style="color:#1ac056; font-weight: 500">Nowak</span></h4>
+            <br>
+            <br>
+            <br>
+            <div id="contact-details">ul. Mostowa /13<br>31-061 Kraków<br><br>tel: 606 745 759<br>e-mail: example@example.pl</div>
+        </article>
+        <article id="contact-form">
+            <!-- Formularz -->
+            <form action="https://formspree.io/blater@poczta.fm" method="POST">
+                <!-- Imię -->
+                <input type="text" name="Imię" id="user-name" placeholder="Imię i nazwisko">
+                <!-- E-mail -->
+                <input type="email" name="E-mail" id="user-email" placeholder="E-mail">
+                <!-- Wiadomość -->
+                <textarea name="Wiadomość" rows="10" id="user-message" placeholder="Wiadomość"></textarea>
+
+                <input type="submit" value="Wyślij" class="button">
+             </form>
+        </article>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <div>
+            <p>Copyright Ⓒ Jan Nowak</p>
+        </div>
+    </footer>
 </body>
+
 </html>
