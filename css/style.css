@@ -169,10 +169,6 @@ a {
     opacity: 1;
 }
 
-.item-mask {
-
-}
-
 .item-mask-border {
     position: absolute;
     width: 94%;
@@ -186,11 +182,19 @@ a {
 }
 
 .item-mask-text {
-    margin: 20px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 200px;
     font-size: 15px;
     font-weight: 300;
     color: aliceblue;
     text-align: center;
+    opacity: 0.9;
 }
 
 #item-1 {
