@@ -39,12 +39,12 @@ header {
 
 li {
     display: inline;
-    float: right;
+/*    float: right;*/
     padding: 5px;
 }
 
 nav {
-    position: fixed;
+/*    position: fixed;*/
     float: right;
     margin-right: 30px;
 }
@@ -148,11 +148,11 @@ a {
 }
 
 #portfolio #portfolio-container .floated {
+    position: relative;
     width: 33.3333%;
     float: left;
     height: 350px;
     background-size: cover;
-    position: relative;
 }
 
 #portfolio #portfolio-container .floated .item-mask {
@@ -167,6 +167,30 @@ a {
 }
 #portfolio #portfolio-container .floated .item-mask:hover {
     opacity: 1;
+}
+
+.item-mask {
+
+}
+
+.item-mask-border {
+    position: absolute;
+    width: 94%;
+    height: 92%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid aliceblue;
+}
+
+.item-mask-text {
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    color: aliceblue;
+    text-align: center;
 }
 
 #item-1 {
@@ -231,8 +255,7 @@ input, textarea {
 
 footer {
     height: 30px;
-    background-color: #1c2a44;
-    
+    background-color: #1c2a44;  
 }
 
 #copyright {
