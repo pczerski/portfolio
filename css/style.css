@@ -39,7 +39,6 @@ header {
 
 li {
     display: inline;
-/*    float: right;*/
     padding: 5px;
 }
 
@@ -119,6 +118,11 @@ a {
     text-align: center;
 }
 
+img {
+    border: 15px solid white;
+    border-radius: 15px;
+}
+
 #rigth-about {
     text-align: right;
 }
@@ -169,32 +173,29 @@ a {
     opacity: 1;
 }
 
-.item-mask-border {
+.item-mask-border, .item-mask-text {
     position: absolute;
-    width: 94%;
-    height: 92%;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0.85;
+}
+
+.item-mask-border {
+    width: 94%;
+    height: 92%;
     border: 1px solid aliceblue;
 }
 
 .item-mask-text {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 400px;
+    width: 350px;
     height: 200px;
     font-size: 15px;
     font-weight: 300;
     color: aliceblue;
     text-align: center;
-    opacity: 0.9;
 }
 
 #item-1 {
