@@ -1,0 +1,117 @@
+/* Responsywność */
+@media screen and (min-width:1201px) {
+    
+/*  Portfolio  */
+    #portfolio #portfolio-container .floated {
+        width: 33.3333%;    
+    }
+    
+    #portfolio, #portfolio-container, .floated, .item-mask{
+        width: 100%;
+    }
+    
+    #item-1 #item-2 #item-3 {
+        width: 33.3333%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    
+/*  Portfolio  */
+    .floated, .item-mask {
+        width: 50%;
+    }
+    
+    #portfolio-container .floated .item-mask {
+        width: 100%;
+    }
+    
+    #item-1 #item-2 {
+        width: 50%;
+    }
+    
+    #item-3 {
+        width: 100%;
+    }
+    
+ }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+/*  Header  */
+/*  Chowane menu  */
+    #main-nav .toggle {
+        display: block;
+        background-color: #fff;
+        padding:  0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    
+    #main-nav ul {
+        display: none;
+    }
+    
+    #main-nav #drop:checked + ul {
+        display: block;
+    }
+    
+    #main-nav > ul > li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+    }
+    
+/*
+    li {
+        display: block;
+    }
+*/
+    
+/*  O mnie  */
+    #about {
+/*
+        padding-left: 30px;
+        padding-right: 30px;
+*/
+    }
+    
+    #left-about, #right-about {
+        display: block;
+        width: 99%;
+        float: none;
+        margin: auto;
+    }
+    
+    #right-about {
+        text-align: center;
+    }
+    
+    #jan-nowak-photo {
+        width: 99%
+    }
+    
+/*  Portfolio  */
+    .floated, .item-mask {
+        width: 100%;
+    }
+    
+    #portfolio #portfolio-container .floated {
+        float: none;
+    }
+    
+    #item-1, #item-2, #item-3 {
+        width: 100%;
+    }
+    
+/*  Kontakt  */
+    #contact-data, #contact-form {
+        display: block;
+        width: 100%;
+    }
+}

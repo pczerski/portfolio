@@ -3,18 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+<!--  Włączenie responsywności  -->
+    <meta name="viewport" content="width=device-width"/>
     <title>Moje portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <!-- Nagłówek  menu -->
-    <header>
-        <div id="photo">
-            <nav id="menu">
+    <header id="main-header">
+        <div id="header-photo">
+            <nav id="main-nav">
+<!--      Chowane menu       -->
+               <label for="drop" class="toggle">Menu</label>
+               <input type="checkbox" id="drop">
                 <ul>
                     <li><a href="#about">o mnie</a></li>
                     <li><a href="#skills">umiejętności</a></li>
@@ -22,7 +28,7 @@
                     <li><a href="#contact">kontakt</a></li>
                 </ul>
             </nav>
-            <div id="header">
+            <div id="title">
                 <h1><span style="color:aliceblue; font-weight: 200">Jan</span> Nowak</h1>
                 <h2>Front-End Developer</h2>
             </div>
@@ -33,11 +39,11 @@
     <section id="about">
         <h3>O <span style="color:#1ac056; font-weight: 500">mnie</span></h3>
         <figure id="left-about">
-            <img src="img/jan-nowak.jpg" alt="Jan Nowak" width="250"> 
+            <img id="jan-nowak-photo" src="img/jan-nowak.jpg" alt="Jan Nowak"> 
         </figure>
-        <article id="right-about">
+        <div id="right-about">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos velit a temporibus nobis rem quaerat dolor animi tenetur libero, fugiat voluptatum incidunt amet inventore quod, dignissimos deserunt maiores fugit nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga necessitatibus esse natus quo pariatur, voluptatibus quidem consectetur facere. Perspiciatis iste, doloremque consequuntur saepe nostrum voluptas nesciunt, molestiae voluptatibus quos quam.</p>
-        </article>
+        </div>
     </section>
 
     <!-- Umiejętności -->
@@ -45,19 +51,19 @@
         <h3>Moje <span style="color:#1ac056; font-weight: 500">umiejętności</span></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae commodi error inventore dignissimos, non deleniti eaque iure impedit optio. Unde quo voluptas quasi accusamus repellat eius consectetur asperiores ipsam.</p>
         <figure>
-            <img src="icons/html5.png" alt="">
+            <img src="icons/html5.png" alt="HTML5">
             <figcaption>HTML5</figcaption>
         </figure>
         <figure>
-            <img src="icons/css3.png" alt="">
+            <img src="icons/css3.png" alt="CSS3">
             <figcaption>CSS3</figcaption>
         </figure>
         <figure>
-            <img src="icons/js.png" alt="">
+            <img src="icons/js.png" alt="JS">
             <figcaption>JS</figcaption>
         </figure>
         <figure>
-            <img src="icons/jquery.png" alt="">
+            <img src="icons/jquery.png" alt="jQuery">
             <figcaption>jQuery</figcaption>
         </figure>
     </section>
@@ -114,14 +120,14 @@
 
     <!-- Kontakt -->
     <section id="contact">
-        <article id="contact-data">
+        <div id="contact-data">
             <h4><span style="color:aliceblue; font-weight: 300">Jan </span><span style="color:#1ac056; font-weight: 500">Nowak</span></h4>
             <br>
             <br>
             <br>
-            <div id="contact-details">ul. Mostowa 6/13<br>31-061 Kraków<br><br>tel: 606 745 759<br>e-mail: example@example.pl</div>
-        </article>
-        <article id="contact-form">
+            <div id="contact-details">ul. Mostowa 6/13<br>31-061 Kraków<br><br>tel: 606 745 759<br>e-mail:<a href="mailto:example@example.pl"><span style="color:#1ac056">example@example.pl</span></a></div>
+        </div>
+        <div id="contact-form">
             <!-- Formularz -->
             <form action="https://formspree.io/blater@poczta.fm" method="POST">
                 <!-- Imię -->
@@ -129,11 +135,11 @@
                 <!-- E-mail -->
                 <input type="email" name="E-mail" id="user-email" placeholder="E-mail">
                 <!-- Wiadomość -->
-                <textarea name="Wiadomość" rows="10" id="user-message" placeholder="Wiadomość"></textarea>
+                <textarea name="Wiadomość" rows="8" id="user-message" placeholder="Wiadomość"></textarea>
 
                 <input type="submit" value="Wyślij" class="button">
              </form>
-        </article>
+        </div>
     </section>
 
     <!-- Stopka -->

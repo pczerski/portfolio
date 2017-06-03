@@ -5,14 +5,14 @@ body {
     margin: 0;
 }
 
-header {
+#main-header {
     position: relative; 
     top: 0;
     height: 100vh;
     width: 100%;    
 }
 
-#header {
+#title {
     position: absolute;
 /*  Musi być podany rozmiar, bo inaczej się nie wypozycjonuje  */
     width: 480px;
@@ -24,10 +24,10 @@ header {
     right: 0;
 }
 
-#photo
+#header-photo
 {
     position: absolute;
-    background-image: url("/img/header-background.jpg");
+    background-image: url("../img/header-background.jpg");
     height: 100vh;
     width: 100%; 
     margin: 0;
@@ -43,9 +43,13 @@ li {
 }
 
 nav {
-/*    position: fixed;*/
     float: right;
     margin-right: 30px;
+}
+
+
+#main-nav .toggle [id=drop] {
+    display: none;
 }
 
 a {
@@ -101,15 +105,16 @@ a {
 
 #about {
     width: 100%;
-    height: 400px;
+/*    height: 400px;*/
     padding-top: 50px;
     padding-bottom: 70px;
     background-color: #f9fcfe;
+    overflow: hidden;
 }
 
 #left-about, #right-about {
     display: inline-block;
-    width: 45%;
+    width: 40%;
 }
 
 #left-about {
@@ -118,14 +123,17 @@ a {
     text-align: center;
 }
 
-img {
+#jan-nowak-photo {
     border: 15px solid white;
     border-radius: 15px;
+    width: 250px;
 }
 
+/*
 #rigth-about {
-    text-align: right;
+    text-align: left;
 }
+*/
 
 #skills {
     clear: left;
@@ -143,7 +151,7 @@ img {
 
 #portfolio {
     width: 100%;
-    height: 500px;
+/*    height: 500px;*/
     text-align: center;
 }
 
@@ -153,7 +161,7 @@ img {
 
 #portfolio #portfolio-container .floated {
     position: relative;
-    width: 33.3333%;
+/*    width: 33.3333%;*/
     float: left;
     height: 350px;
     background-size: cover;
@@ -163,12 +171,13 @@ img {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+/*    width: 100%;*/
     height: 100%;
     background: rgba(42, 61, 79, 0.8);
     opacity: 0;
     transition:  all .5s ease-in-out;
 }
+
 #portfolio #portfolio-container .floated .item-mask:hover {
     opacity: 1;
 }
@@ -212,7 +221,9 @@ img {
 
 #contact {
     background-color: #213b50;
-    height: 450px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+/*    height: 450px;*/
 }
 
 #contact-data, #contact-form {
@@ -222,7 +233,7 @@ img {
 
 #contact-data {
     float: left;
-    margin-left: 30px;
+/*    margin-left: 30px;*/
 }
 
 #contact-details {
@@ -230,19 +241,18 @@ img {
 }
 
 form {
-/*    position: absolute;*/
+/*    position: absolute;*/     
     padding-top: 30px;
-    width: 450px;
+    width: 400px;
     background: #213b50;
 }
 
 input, textarea {
-    float: right;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+/*    padding-left: 15px;*/
     background-color: #2b4a64;
     border-width: 0px;
     border-color: #ffffff;
@@ -252,9 +262,11 @@ input, textarea {
 }
 
 .button {
+    float: right;
     background-color: #1ac056;
+    border: 1px solid aliceblue;
     color: aliceblue;
-    width: 90px;
+    width: 100px;
     height: 45px;
 }
 
