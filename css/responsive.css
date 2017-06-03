@@ -83,6 +83,7 @@
     #left-about, #right-about {
         display: block;
         width: 99%;
+        /*    Wyłączamy floata, bo się wszystko rozjedzie    */
         float: none;
         margin: auto;
     }
@@ -101,6 +102,7 @@
     }
     
     #portfolio #portfolio-container .floated {
+        /*    Wyłączamy floata, bo się wszystko rozjedzie    */
         float: none;
     }
     

@@ -143,9 +143,10 @@ a {
 #skills {
     clear: left;
     padding-top: 20px;
-    height: 420px;
+/*    height: 420px;*/
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -243,6 +244,38 @@ a {
 
 #contact-details {
     color: aliceblue;
+    padding-bottom: 30px;
+}
+
+.icon-box {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+
+.fa {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+/*  Wycentrowane w poziomie przez fa-fw  */
+/*    width: 20px;*/
+    height: 14px;
+    color: white;
+}
+
+.icon-box:hover {
+    background-color: white;
+
+}
+
+.fa:hover {
+    color: black;
 }
 
 form, input, textarea {
