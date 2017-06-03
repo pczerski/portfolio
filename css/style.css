@@ -42,13 +42,18 @@ li {
     padding: 5px;
 }
 
-nav {
+#main-nav {
     float: right;
     margin-right: 30px;
 }
 
 
 #main-nav .toggle [id=drop] {
+    display: none;
+}
+
+/* Chowanie checkboxa */
+#drop {
     display: none;
 }
 
@@ -240,10 +245,13 @@ a {
     color: aliceblue;
 }
 
+form, input, textarea {
+    width: 450px;
+}
+
 form {
 /*    position: absolute;*/     
     padding-top: 30px;
-    width: 400px;
     background: #213b50;
 }
 
@@ -258,7 +266,6 @@ input, textarea {
     border-color: #ffffff;
     font-size: 14px;
     color: aliceblue;
-    width: 400px;
 }
 
 .button {

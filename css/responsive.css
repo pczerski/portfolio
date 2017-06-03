@@ -1,7 +1,7 @@
 /* Responsywność */
 @media screen and (min-width:1201px) {
     
-/*  Portfolio  */
+/*  PORTFOLIO  */
     #portfolio #portfolio-container .floated {
         width: 33.3333%;    
     }
@@ -17,7 +17,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     
-/*  Portfolio  */
+/*  PORTFOLIO  */
     .floated, .item-mask {
         width: 50%;
     }
@@ -38,7 +38,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
-/*  Header  */
+/*  HEADER  */
 /*  Chowane menu  */
     #main-nav .toggle {
         display: block;
@@ -60,20 +60,19 @@
         display: block;
     }
     
+    #main-nav {
+        margin: 0;
+        width: 100%;
+    }
+    
     #main-nav > ul > li {
         display: block;
-        width: 100%;
-        padding: 20px;
+/*        width: 100%;*/
+        padding-bottom: 40px;
         text-align: right;
     }
     
-/*
-    li {
-        display: block;
-    }
-*/
-    
-/*  O mnie  */
+ /*  O MNIE  */
     #about {
 /*
         padding-left: 30px;
@@ -96,7 +95,7 @@
         width: 99%
     }
     
-/*  Portfolio  */
+/*  PORTFOLIO  */
     .floated, .item-mask {
         width: 100%;
     }
@@ -109,7 +108,7 @@
         width: 100%;
     }
     
-/*  Kontakt  */
+/*  KONTAKT  */
     #contact-data, #contact-form {
         display: block;
         width: 100%;
