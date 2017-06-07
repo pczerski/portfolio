@@ -5,6 +5,7 @@ body {
     margin: 0;
 }
 
+/* HEADER */
 #main-header {
     position: relative; 
     top: 0;
@@ -104,13 +105,23 @@ h4 {
     text-align: left;
 }
 
+.white-text {
+    color: aliceblue;
+    font-weight: 300;
+}
+
+.green-text {
+    color: #1ac056;
+    font-weight: 500;
+}
+
 a {
     text-decoration: none;
 }
 
+/* O MNIE */
 #about {
     width: 100%;
-/*    height: 400px;*/
     padding-top: 50px;
     padding-bottom: 70px;
     background-color: #f9fcfe;
@@ -134,19 +145,13 @@ a {
     width: 250px;
 }
 
-/*
-#rigth-about {
-    text-align: left;
-}
-*/
-
+/* UMIEJĘTNOŚCI */
 #skills {
     clear: left;
     padding-top: 20px;
-/*    height: 420px;*/
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 140px;
     text-align: center;
 }
 
@@ -155,9 +160,9 @@ a {
     margin: 30px;
 }
 
+/* PORTFOLIO */
 #portfolio {
     width: 100%;
-/*    height: 500px;*/
     text-align: center;
 }
 
@@ -167,7 +172,6 @@ a {
 
 #portfolio #portfolio-container .floated {
     position: relative;
-/*    width: 33.3333%;*/
     float: left;
     height: 350px;
     background-size: cover;
@@ -177,7 +181,6 @@ a {
     position: absolute;
     left: 0;
     top: 0;
-/*    width: 100%;*/
     height: 100%;
     background: rgba(42, 61, 79, 0.8);
     opacity: 0;
@@ -187,6 +190,7 @@ a {
 #portfolio #portfolio-container .floated .item-mask:hover {
     opacity: 1;
 }
+
 
 .item-mask-border, .item-mask-text {
     position: absolute;
@@ -225,21 +229,22 @@ a {
     background-image: url('../img/portfolio4.jpg');
 }
 
+/* KONTAKT */
 #contact {
+    overflow: hidden;
+/*    position: relative;*/
     background-color: #213b50;
     padding-left: 30px;
     padding-bottom: 50px;
-/*    height: 450px;*/
 }
 
 #contact-data, #contact-form {
     display: inline-block;
-    width: 45%;
 }
 
-#contact-data {
-    float: left;
-/*    margin-left: 30px;*/
+#contact-form {
+    float: none;
+    width: 50%;
 }
 
 #contact-details {
@@ -248,34 +253,20 @@ a {
 }
 
 .icon-box {
-    position: relative;
     display: inline-block;
     width: 32px;
     height: 32px;
     border: 1px solid white;
     margin-right: 20px;
-}
-
-.fa {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-/*  Wycentrowane w poziomie przez fa-fw  */
-/*    width: 20px;*/
-    height: 14px;
+    text-align: center;
+    line-height: 32px;
     color: white;
 }
 
 .icon-box:hover {
     background-color: white;
+    color: #213b50;
 
-}
-
-.fa:hover {
-    color: black;
 }
 
 form, input, textarea {
@@ -283,8 +274,8 @@ form, input, textarea {
 }
 
 form {
-/*    position: absolute;*/     
-    padding-top: 30px;
+    margin-left: auto;
+    top: 30px;
     background: #213b50;
 }
 
@@ -293,7 +284,8 @@ input, textarea {
     margin-bottom: 5px;
     padding-bottom: 15px;
     padding-top: 15px;
-/*    padding-left: 15px;*/
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #2b4a64;
     border-width: 0px;
     border-color: #ffffff;
@@ -301,18 +293,24 @@ input, textarea {
     color: aliceblue;
 }
 
+textarea {
+    resize: none;
+}
+
 .button {
     float: right;
     background-color: #1ac056;
     border: 1px solid aliceblue;
     color: aliceblue;
+/*  Wyrównanie do prawej  */
+    margin-right: -30px;
     width: 100px;
     height: 45px;
 }
 
 footer {
     height: 30px;
-    background-color: #1c2a44;  
+    background-color: #182b3a;  
 }
 
 #copyright {
