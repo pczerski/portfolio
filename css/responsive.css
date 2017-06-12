@@ -33,6 +33,10 @@
     #item-3 {
         width: 100%;
     }
+    
+    #item-mask-border-3 {
+        width: 97%;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
