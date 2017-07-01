@@ -40,28 +40,40 @@ body {
 
 li {
     display: inline;
-    padding: 5px;
+    padding-right: 45px;
+}
+
+ul {
+    float: right;
 }
 
 #main-nav {
-    float: right;
+    //overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
     margin-right: 30px;
 }
 
-
-#main-nav .toggle [id=drop] {
-    display: none;
+#main-nav.menu-class {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    z-index: 10;
 }
 
-/* Chowanie checkboxa */
-#drop {
-    display: none;
+#main-nav.menu-class a {
+    color: #1ac056;
 }
 
-a {
-    margin: 20px;
+#main-nav a {
+    right: 30px;
     color: aliceblue;
     font-weight: 400;
+}
+
+#main-nav a:hover {
+    color: #1ac056;
 }
 
 .visited {
