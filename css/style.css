@@ -273,12 +273,13 @@ a {
     text-align: center;
     line-height: 32px;
     color: white;
+    transition-duration: .5s;
 }
 
 .icon-box:hover {
     background-color: white;
     color: #213b50;
-
+    transition-duration: .5s;
 }
 
 form, input, textarea {
