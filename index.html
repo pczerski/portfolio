@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
-<!--  Włączenie responsywności  -->
-    <meta name="viewport" content="width=device-width"/>
+    <!--  Włączenie responsywności  -->
+    <meta name="viewport" content="width=device-width" />
     <title>Moje portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -16,18 +17,31 @@
 <body>
     <!-- Nagłówek  menu -->
     <header id="main-header">
-        <div id="header-photo">
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="#about">o mnie</a></li>
-                    <li><a href="#skills">umiejętności</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#contact">kontakt</a></li>
-                </ul>
-            </nav>
-            <div id="title">
-                <h1><span class="white-text">Jan</span> Nowak</h1>
-                <h2>Front-End Developer</h2>
+        <div class="parallax">
+            <div id="header-photo">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#about">o mnie</a></li>
+                                <li><a href="#skills">umiejętności</a></li>
+                                <li><a href="#portfolio">portfolio</a></li>
+                                <li><a href="#contact">kontakt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div id="title">
+                    <h1><span class="white-text">Jan</span> Nowak</h1>
+                    <h2>Front-End Developer</h2>
+                </div>
             </div>
         </div>
     </header>
@@ -35,84 +49,109 @@
     <!-- O mnie -->
     <section id="about">
         <h3>O <span class="green-text">mnie</span></h3>
-        <figure id="left-about">
-            <img id="jan-nowak-photo" src="img/jan-nowak.jpg" alt="Jan Nowak"> 
-        </figure>
-        <div id="right-about">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos velit a temporibus nobis rem quaerat dolor animi tenetur libero, fugiat voluptatum incidunt amet inventore quod, dignissimos deserunt maiores fugit nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga necessitatibus esse natus quo pariatur, voluptatibus quidem consectetur facere. Perspiciatis iste, doloremque consequuntur saepe nostrum voluptas nesciunt, molestiae voluptatibus quos quam.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <figure id="left-about">
+                        <img id="jan-nowak-photo" src="img/jan-nowak.jpg" alt="Jan Nowak">
+                    </figure>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div id="right-about">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos velit a temporibus nobis rem quaerat dolor animi tenetur libero, fugiat voluptatum incidunt amet inventore quod, dignissimos deserunt maiores fugit nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga necessitatibus esse natus quo pariatur, voluptatibus quidem consectetur facere. Perspiciatis iste, doloremque consequuntur saepe nostrum voluptas nesciunt, molestiae voluptatibus quos quam.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Umiejętności -->
     <section id="skills">
         <h3>Moje <span class="green-text">umiejętności</span></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae commodi error inventore dignissimos, non deleniti eaque iure impedit optio. Unde quo voluptas quasi accusamus repellat eius consectetur asperiores ipsam.</p>
-        <figure>
-            <img src="icons/html5.png" alt="HTML5">
-            <figcaption>HTML5</figcaption>
-        </figure>
-        <figure>
-            <img src="icons/css3.png" alt="CSS3">
-            <figcaption>CSS3</figcaption>
-        </figure>
-        <figure>
-            <img src="icons/js.png" alt="JS">
-            <figcaption>JS</figcaption>
-        </figure>
-        <figure>
-            <img src="icons/jquery.png" alt="jQuery">
-            <figcaption>jQuery</figcaption>
-        </figure>
+        <div class="container">
+            <div class="row">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae commodi error inventore dignissimos, non deleniti eaque iure impedit optio. Unde quo voluptas quasi accusamus repellat eius consectetur asperiores ipsam.</p>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <figure>
+                        <img src="icons/html5.png" alt="HTML5">
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <figure>
+                        <img src="icons/css3.png" alt="CSS3">
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <figure>
+                        <img src="icons/js.png" alt="JS">
+                        <figcaption>JS</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <figure>
+                        <img src="icons/jquery.png" alt="jQuery">
+                        <figcaption>jQuery</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Portfolio -->
     <section id="portfolio">
         <h3>Moje <span class="green-text">portfolio</span></h3>
-        <div id="portfolio-container">
-            <div class="floated" id="item-1">
-                <div class="item-mask">
-                    <div id="item-mask-border-1">
-                        <div class="item-mask-text">
-                            <div><span style="font-size: 18px; font-weight: bold">Lorem ipsum</span>
-                            <br><br>
-                            Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!
-                            <br><br>
-                            <span style="font-weight: bold">Wykorzystane technologie:</span> 
-                            HTML5, CSS3, RWD, JavaScript, Boostrap<br><br>
-                            <i class="fa fa-link fa-2x" aria-hidden="true"></i></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-xs-12 items">
+                    <div class="floated" id="item-1">
+                        <div class="item-mask">
+                            <div id="item-mask-border-1">
+                                <div class="item-mask-text">
+                                    <div><span style="font-size: 18px; font-weight: bold">Lorem ipsum</span>
+                                        <br><br> Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!
+                                        <br><br>
+                                        <span style="font-weight: bold">Wykorzystane technologie:</span> HTML5, CSS3, RWD, JavaScript, Boostrap<br><br>
+                                        <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--      border content h3 p fa          -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 items">
+                    <div class="floated" id="item-2">
+                        <div class="item-mask">
+                            <div id="item-mask-border-2">
+                                <div class="item-mask-text">
+                                    <div><span style="font-size: 18px; font-weight: bold">Lorem ipsum</span>
+                                        <br><br> Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!
+                                        <br><br>
+                                        <span style="font-weight: bold">Wykorzystane technologie:</span> HTML5, CSS3, RWD, JavaScript, Boostrap<br><br>
+                                        <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--      border content h3 p fa          -->
-            </div>
-            <div class="floated" id="item-2">
-                <div class="item-mask">
-                    <div id="item-mask-border-2">
-                        <div class="item-mask-text">
-                            <div><span style="font-size: 18px; font-weight: bold">Lorem ipsum</span>
-                            <br><br>
-                            Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!
-                            <br><br>
-                            <span style="font-weight: bold">Wykorzystane technologie:</span> 
-                            HTML5, CSS3, RWD, JavaScript, Boostrap<br><br>
-                            <i class="fa fa-link fa-2x" aria-hidden="true"></i></div>
+                <div class="col-lg-4 col-sm-12 col-xs-12 items">
+                    <div class="floated" id="item-3">
+                        <div class="item-mask">
+                            <div id="item-mask-border-3">
+                                <div class="item-mask-text">
+                                    <div><span style="font-size: 18px; font-weight: bold">Lorem ipsum</span>
+                                        <br><br> Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!
+                                        <br><br>
+                                        <span style="font-weight: bold">Wykorzystane technologie:</span> HTML5, CSS3, RWD, JavaScript, Boostrap<br><br>
+                                        <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>                   
-                </div>
-            </div>
-            <div class="floated" id="item-3">
-                <div class="item-mask">
-                    <div id="item-mask-border-3">
-                        <div class="item-mask-text">
-                            <div><span style="font-size: 18px; font-weight: bold">Lorem ipsum</span>
-                            <br><br>
-                            Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!
-                            <br><br>
-                            <span style="font-weight: bold">Wykorzystane technologie:</span> 
-                            HTML5, CSS3, RWD, JavaScript, Boostrap<br><br>
-                            <i class="fa fa-link fa-2x" aria-hidden="true"></i></div>
-                        </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,38 +159,46 @@
 
     <!-- Kontakt -->
     <section id="contact">
-        <div id="contact-data">
-            <h4><span class="white-text">Jan </span><span class="green-text">Nowak</span></h4>
-            <br>
-            <br>
-            <br>
-            <div id="contact-details">ul. Mostowa 6/13<br>31-061 Kraków<br><br>tel: 606 745 759<br>e-mail: <a href="mailto:example@example.pl"><span style="color:#1ac056">example@example.pl</span></a></div>
-<!--     Ikony socjalne      -->
-            <div class="icon-box">
-                <i class="fa fa-facebook fa-lg fa-fw" aria-hidden="true"></i>
-            </div>
-            <div class="icon-box">
-                <i class="fa fa-google-plus fa-lg fa-fw" aria-hidden="true"></i>
-            </div>
-            <div class="icon-box">
-                <i class="fa fa-twitter fa-lg fa-fw" aria-hidden="true"></i>
-            </div>
-            <div class="icon-box">
-                <i class="fa fa-linkedin fa-lg fa-fw" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div id="contact-form">
-            <!-- Formularz -->
-            <form action="https://formspree.io/blater@poczta.fm" method="POST">
-                <!-- Imię -->
-                <input type="text" name="Imię" id="user-name" placeholder="Imię i nazwisko">
-                <!-- E-mail -->
-                <input type="email" name="E-mail" id="user-email" placeholder="E-mail">
-                <!-- Wiadomość -->
-                <textarea name="Wiadomość" rows="8" id="user-message" placeholder="Wiadomość"></textarea>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <div id="contact-data">
+                        <h4><span class="white-text">Jan </span><span class="green-text">Nowak</span></h4>
+                        <br>
+                        <br>
+                        <br>
+                        <div id="contact-details">ul. Mostowa 6/13<br>31-061 Kraków<br><br>tel: 606 745 759<br>e-mail: <a href="mailto:example@example.pl"><span style="color:#1ac056">example@example.pl</span></a></div>
+                        <!--     Ikony socjalne      -->
+                        <div class="icon-box">
+                            <i class="fa fa-facebook fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa fa-google-plus fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa fa-twitter fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-box">
+                            <i class="fa fa-linkedin fa-lg fa-fw" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div id="contact-form">
+                        <!-- Formularz -->
+                        <form action="https://formspree.io/blater@poczta.fm" method="POST">
+                            <!-- Imię -->
+                            <input type="text" name="Imię" id="user-name" placeholder="Imię i nazwisko">
+                            <!-- E-mail -->
+                            <input type="email" name="E-mail" id="user-email" placeholder="E-mail">
+                            <!-- Wiadomość -->
+                            <textarea name="Wiadomość" rows="8" id="user-message" placeholder="Wiadomość"></textarea>
 
-                <input type="submit" value="Wyślij" class="button">
-             </form>
+                            <input type="submit" value="Wyślij" class="button">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -160,6 +207,7 @@
         <div id="copyright">Copyright Ⓒ Jan Nowak</div>
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
     <script src="js/script.js"></script>
 </body>
 

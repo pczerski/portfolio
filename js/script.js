@@ -18,13 +18,13 @@ $('a[href^="#"]').click(function(e) {
 });
 
 function changeMenu() {
-    var navHeight = $('#main-nav').height();
+    var navHeight = $('.navbar').height();
     var currentPosition = $(window).scrollTop();
     
     if ($(window).scrollTop() > navHeight) {
-        $('#main-nav').addClass('menu-class');
-        $('#main-nav').css({transition: 'all .5s'});
+        $('.navbar').addClass('menu-class');
+        $('.navbar').css({transition: 'all .5s'});
     } else {
-        $('#main-nav').removeClass('menu-class');
+        $('.navbar').removeClass('menu-class');
     }
 };

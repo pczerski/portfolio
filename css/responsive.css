@@ -1,118 +1,32 @@
 /* Responsywność */
+
 @media screen and (min-width:1201px) {
     
 /*  PORTFOLIO  */
     #portfolio #portfolio-container .floated {
-        width: 33.3333%;    
-    }
+        //width: 33.3333%;    
+    }   
     
     #portfolio, #portfolio-container, .floated, .item-mask{
-        width: 100%;
+        //width: 100%;
     }
     
     #item-1 #item-2 #item-3 {
-        width: 33.3333%;
+        //width: 33.3333%;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     
 /*  PORTFOLIO  */
-    .floated, .item-mask {
-        width: 50%;
-    }
-    
-    #portfolio-container .floated .item-mask {
-        width: 100%;
-    }
-     
-    #item-1 #item-2 {
-        width: 50%;
-    }
-    
-    #item-3 {
-        width: 100%;
-    }
-    
     #item-mask-border-3 {
         width: 97%;
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-/*  HEADER  */
-/*  Chowane menu  */
-    #main-nav .toggle {
-        display: block;
-        background-color: #fff;
-        padding:  0 20px;
-        color: #1ac056;
-        font-size: 20px;
-        line-height: 60px;
-        text-decoration: none;
-        border: none;
-        text-align: right;
-    }
-    
-    #main-nav ul {
-        display: none;
-    }
-    
-    #main-nav #drop:checked + ul {
-        display: block;
-    }
-    
-    #main-nav {
-        margin: 0;
-        width: 100%;
-    }
-    
-    #main-nav > ul > li {
-        display: block;
-        padding-bottom: 40px;
-        text-align: right;
-    }
-    
- /*  O MNIE  */
-     #left-about, #right-about {
-        display: block;
-        width: 99%;
-        /*    Wyłączamy floata, bo się wszystko rozjedzie    */
-        float: none;
-        margin: auto;
-    }
-    
-    #right-about {
-        text-align: center;
-    }
-    
-    #jan-nowak-photo {
-        width: 99%
-    }
-    
-/*  PORTFOLIO  */
-    .floated, .item-mask {
-        width: 100%;
-    }
-    
-    #portfolio #portfolio-container .floated {
-        /*    Wyłączamy floata, bo się wszystko rozjedzie    */
-        float: none;
-    }
-    
-    #item-1, #item-2, #item-3 {
-        width: 100%;
-    }
-    
-/*  KONTAKT  */
-    form {
-        margin-top: 30px;
-        margin-left: 0;
-    }
-    
-    #contact-data, #contact-form {
-/*        display: block;*/
-        width: 100%;
+@media screen and (max-width: 768px) {
+    #about .row {
+/*    Anulowanie flexa, aby tekst przesunął się pod zdjęcie    */
+        display: initial; 
     }
 }

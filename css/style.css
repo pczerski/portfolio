@@ -1,87 +1,8 @@
+/* WSPÓLNE */
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-/* Usunięcie marginesów strony */
     margin: 0;
-}
-
-/* HEADER */
-#main-header {
-    position: relative; 
-    top: 0;
-    height: 100vh;
-    width: 100%;    
-}
-
-#title {
-    position: absolute;
-/*  Musi być podany rozmiar, bo inaczej się nie wypozycjonuje  */
-    width: 480px;
-    height: 290px;
-    margin: auto; 
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#header-photo
-{
-    position: absolute;
-    background-image: url("../img/header-background.jpg");
-    height: 100vh;
-    width: 100%; 
-    margin: 0;
-    top: 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; 
-}
-
-li {
-    display: inline;
-    padding-right: 45px;
-}
-
-ul {
-    float: right;
-}
-
-#main-nav {
-    //overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: transparent;
-    margin-right: 30px;
-}
-
-#main-nav.menu-class {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
-    z-index: 10;
-}
-
-#main-nav.menu-class a {
-    color: #1ac056;
-}
-
-#main-nav a {
-    right: 30px;
-    color: aliceblue;
-    font-weight: 400;
-}
-
-#main-nav a:hover {
-    color: #1ac056;
-}
-
-.visited {
-   color: #1ac056;
-}
-
-.active {
-    background-color: bisque;
 }
 
 p, h2, h3, #menu {
@@ -109,6 +30,7 @@ h2 {
 
 h3 {
     font-size: 28px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -131,22 +53,119 @@ a {
     text-decoration: none;
 }
 
+#about, #skills, #contact {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+/* HEADER */
+#main-header {
+    position: relative; 
+    top: 0;
+    height: 100vh;
+    width: 100%;    
+}
+
+#title {
+    position: absolute;
+/*  Musi być podany rozmiar, bo inaczej się nie wypozycjonuje  */
+    width: 480px;
+    height: 290px;
+    margin: auto; 
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header-photo
+{
+    position: absolute;
+    height: 100vh;
+    width: 100%; 
+    margin: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+}
+
+.parallax { 
+    background-image: url("../img/header-background.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Menu */
+.navbar-fixed-top {
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+}
+
+li {
+    right: 30px;
+    margin-left: 25px;
+}
+
+.navbar-toggle {
+    right: 30px;
+}
+
+ul {
+    text-align: right;
+}
+
+.navbar.menu-class { 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar.menu-class a {
+    color: #1ac056;
+}
+
+#main-header a {
+    color: aliceblue;
+    font-weight: 400;
+}
+
+#main-header a:hover {
+    color: #1ac056;
+}
+
+#main-header .icon-bar {
+    background-color: #1ac056;
+}
+
+#main-header .navbar-toggle {
+    background-color: transparent;
+}
+
+#main-header .navbar-toggle:hover {
+    background-color: #1ac056;
+}
+
+#main-header .navbar-toggle:hover .icon-bar {
+    background-color: aliceblue;
+}
+
 /* O MNIE */
 #about {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 70px;
     background-color: #f9fcfe;
-    overflow: hidden;
 }
 
 #left-about, #right-about {
-    display: inline-block;
-    width: 40%;
+    width: 100%;
 }
 
 #left-about {
-    float: left;
 /*  Centrowanie zdjęcia  */
     text-align: center;
 }
@@ -157,39 +176,38 @@ a {
     width: 250px;
 }
 
+#about .row {
+   display: flex;
+   align-items: center; 
+ }
+
 /* UMIEJĘTNOŚCI */
 #skills {
-    clear: left;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 140px;
     text-align: center;
 }
 
 #skills figure {
-    display: inline-block;
-    margin: 30px;
+    margin-top: 30px;
 }
 
 /* PORTFOLIO */
 #portfolio {
     width: 100%;
+    padding-top: 50px;
     text-align: center;
 }
 
-#portfolio #portfolio-container {
+#portfolio .container {
     width: 100%;
 }
 
-#portfolio #portfolio-container .floated {
+#portfolio #portfolio .row, .floated {
     position: relative;
-    float: left;
     height: 350px;
     background-size: cover;
 }
 
-#portfolio #portfolio-container .floated .item-mask {
+#portfolio #portfolio .row, .floated .item-mask {
     position: absolute;
     left: 0;
     top: 0;
@@ -197,12 +215,12 @@ a {
     background: rgba(42, 61, 79, 0.8);
     opacity: 0;
     transition:  all .5s ease-in-out;
+    width: 100%;
 }
 
-#portfolio #portfolio-container .floated .item-mask:hover {
+#portfolio #portfolio .row, .floated .item-mask:hover {
     opacity: 1;
 }
-
 
 #item-mask-border-1, #item-mask-border-2, #item-mask-border-3, .item-mask-text {
     position: absolute;
@@ -229,6 +247,11 @@ a {
     text-align: center;
 }
 
+.items {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 #item-1 {
     background-image: url('../img/portfolio1.jpg');
 }
@@ -243,20 +266,13 @@ a {
 
 /* KONTAKT */
 #contact {
-    overflow: hidden;
-/*    position: relative;*/
     background-color: #213b50;
-    padding-left: 30px;
-    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-#contact-data, #contact-form {
-    display: inline-block;
-}
-
-#contact-form {
-    float: none;
-    width: 50%;
+#contact-data {
+    padding-bottom: 30px;
 }
 
 #contact-details {
@@ -283,20 +299,24 @@ a {
 }
 
 form, input, textarea {
-    width: 450px;
+    width: 100%;
 }
 
 form {
-    margin-left: auto;
-    top: 30px;
+    margin-top: 10px;
     background: #213b50;
 }
 
+input {
+    height: 40px;
+}
+
+textarea {
+    padding-top: 10px;
+}
+
 input, textarea {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    margin-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
     background-color: #2b4a64;
@@ -310,15 +330,19 @@ textarea {
     resize: none;
 }
 
-.button {
+#contact .button {
     float: right;
     background-color: #1ac056;
     border: 1px solid aliceblue;
     color: aliceblue;
-/*  Wyrównanie do prawej  */
-    margin-right: -30px;
     width: 100px;
     height: 45px;
+    transition-duration: .5s;
+}
+
+#contact .button:hover {
+    background-color:darkturquoise;
+    transition-duration: .5s;
 }
 
 footer {
