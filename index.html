@@ -188,13 +188,18 @@
                         <!-- Formularz -->
                         <form action="https://formspree.io/blater@poczta.fm" method="POST">
                             <!-- Imię -->
-                            <input type="text" name="Imię" id="user-name" placeholder="Imię i nazwisko">
+                            <div class="form-group">
+                                <input type="text" name="Imię" class="form-control" placeholder="Imię i nazwisko">
+                            </div>
                             <!-- E-mail -->
-                            <input type="email" name="E-mail" id="user-email" placeholder="E-mail">
+                            <div class="form-group">
+                                <input type="email" name="E-mail" class="form-control" placeholder="E-mail">
+                            </div>
                             <!-- Wiadomość -->
-                            <textarea name="Wiadomość" rows="8" id="user-message" placeholder="Wiadomość"></textarea>
-
-                            <input type="submit" value="Wyślij" class="button">
+                            <div class="form-group">
+                                <textarea name="Wiadomość" rows="8" class="form-control" placeholder="Wiadomość"></textarea>
+                            </div>
+                            <input type="submit" value="WYŚLIJ" class="btn btn-default">
                         </form>
                     </div>
                 </div>

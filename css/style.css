@@ -298,31 +298,19 @@ ul {
     transition-duration: .5s;
 }
 
-form, input, textarea {
-    width: 100%;
-}
-
 form {
     margin-top: 10px;
-    background: #213b50;
 }
 
-input {
-    height: 40px;
+#contact input {
+    height: 45px;
 }
 
-textarea {
-    padding-top: 10px;
-}
-
-input, textarea {
+.form-control {
     margin-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
     background-color: #2b4a64;
-    border-width: 0px;
-    border-color: #ffffff;
-    font-size: 14px;
+    border: none;
+    font-size: 16px;
     color: aliceblue;
 }
 
@@ -330,17 +318,17 @@ textarea {
     resize: none;
 }
 
-#contact .button {
+#contact .btn {
     float: right;
     background-color: #1ac056;
-    border: 1px solid aliceblue;
     color: aliceblue;
+    font-size: 16px;
     width: 100px;
     height: 45px;
     transition-duration: .5s;
 }
 
-#contact .button:hover {
+#contact .btn:hover {
     background-color:darkturquoise;
     transition-duration: .5s;
 }
