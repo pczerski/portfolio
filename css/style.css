@@ -229,7 +229,6 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.85;
 }
 
 #item-mask-border-1, #item-mask-border-2, #item-mask-border-3 {
@@ -240,7 +239,7 @@ ul {
 
 .item-mask-text {
     width: 350px;
-    height: 230px;
+    height: 250px;
     font-size: 15px;
     font-weight: 300;
     color: aliceblue;
@@ -262,6 +261,11 @@ ul {
 
 #item-3{
     background-image: url('../img/portfolio4.jpg');
+}
+
+.mask-font {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* KONTAKT */
