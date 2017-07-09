@@ -157,7 +157,7 @@ ul {
 
 /* O MNIE */
 #about {
-    width: 100%;
+    //width: 100%;
     background-color: #f9fcfe;
 }
 
@@ -192,7 +192,6 @@ ul {
 
 /* PORTFOLIO */
 #portfolio {
-    width: 100%;
     padding-top: 50px;
     text-align: center;
 }
@@ -229,6 +228,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0.85;
 }
 
 #item-mask-border-1, #item-mask-border-2, #item-mask-border-3 {
