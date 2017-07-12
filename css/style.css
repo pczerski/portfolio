@@ -112,10 +112,6 @@ li {
     margin-left: 25px;
 }
 
-.navbar-toggle {
-    right: 30px;
-}
-
 ul {
     text-align: right;
 }
@@ -145,6 +141,7 @@ ul {
 
 #main-header .navbar-toggle {
     background-color: transparent;
+    right: 30px;
 }
 
 #main-header .navbar-toggle:hover {
@@ -196,11 +193,7 @@ ul {
     text-align: center;
 }
 
-#portfolio .container {
-    width: 100%;
-}
-
-#portfolio #portfolio .row, .floated {
+#portfolio .row, .floated {
     position: relative;
     height: 350px;
     background-size: cover;
