@@ -208,15 +208,6 @@ ul {
     opacity: 1;
 }
 
-.item-mask-text {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
 #item-mask-border-1, #item-mask-border-2, #item-mask-border-3 {
     width: 100%;
     height: 100%;
@@ -224,6 +215,12 @@ ul {
 }
 
 .item-mask-text {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
     width: 320px;
     height: 250px;
     font-size: 15px;
