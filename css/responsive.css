@@ -1,13 +1,8 @@
 /* Responsywność */
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-    
-/*  PORTFOLIO  */
-    #item-mask-border-3 {
-        width: 97%;
-    }
-}
 
+/*  ABOUT  */
 @media screen and (max-width: 768px) {
     #about .row {
 /*    Anulowanie flexa, aby tekst przesunął się pod zdjęcie    */
