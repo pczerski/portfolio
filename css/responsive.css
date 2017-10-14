@@ -1,0 +1,55 @@
+@media screen and (max-width: 1200px) {
+/*  PORTFOLIO  */
+    #item-3 {
+         width: 780px;
+    }    
+}
+
+@media screen and (max-width: 992px) {
+/*  O MNIE  */
+    #about-right {
+        float: none;
+        width: 100%;
+    }
+    
+/*  KONTAKT  */
+    #contact-data p {
+        text-align: center;
+    }
+    
+    #contact-data {
+        text-align: center;
+        padding-left: 0;
+        width: 100%;
+    }
+        
+    #contact-form {
+        position: initial;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+/*  PORTFOLIO  */
+    .floated {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #item-3 {
+         width: 390px;
+    }
+        
+    .form-control {
+        width: 440px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+/*  KONTAKT  */
+    .form-control {
+        width: 350px;
+    }
+}

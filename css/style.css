@@ -24,7 +24,7 @@ h1, h3, h4, #contact-data a {
     color: #1ac056;
 }
 
-h2, #white-text, #name-text, #contact-data, #copyright {
+h2, .white-text, #name-text, #contact-data, #copyright {
     color: aliceblue;
 }
 
@@ -48,16 +48,16 @@ h4 {
     font-weight: 400;
 }
 
-#white-text {
+.white-text {
     font-weight: 200;
 }
 
-#black-text, #name-text, #contact-data, #copyright, .form-control {
+.black-text, #name-text, #contact-data, #copyright, .form-control {
     font-weight: 300;
     font-family: "lato", sans-serif;
 }
 
-#black-text {
+.black-text {
     color: #291f1a;
 }
 
@@ -151,6 +151,8 @@ h4 {
 /* PORTFOLIO */
 #portfolio {
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 /*  Likwidacja przerwy między itemami  */
     font-size: 0;
 }
@@ -159,7 +161,7 @@ h4 {
     position: relative;
     display: inline-block;
     height: 350px;
-    width: 30%;
+    width: 390px;
     background-size: cover;
 }
 
@@ -217,7 +219,7 @@ h4 {
 
 /* KONTAKT */
 #contact {
-    position: relative;
+    //position: relative;
     background-color: #213b50;
 }
 
@@ -248,16 +250,17 @@ h4 {
     transition-duration: .5s;
 }
 
-#contact form {
+#contact-form {
     position: absolute;
-    top: 80px;
+    margin-top: 50px;
+
 }
 
 .form-control {
     display: block;
     width: 550px;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 5px 10px;
     border: none;
     background-color: #2b4a64;
     font-size: 16px;
@@ -268,7 +271,7 @@ h4 {
     height: 45px;
 }
 
-textarea {
+#contact textarea {
     resize: none;
 }
 
