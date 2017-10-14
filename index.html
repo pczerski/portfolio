@@ -4,123 +4,163 @@
 <head>
     <meta charset="utf-8">
     <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i&amp;subset=latin-ext" rel="stylesheet">
 
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/responsive.css">
-
 
 </head>
 
 <body>
     <header id="main-header">
-        <nav id="main-nav">
-            <ul>
-                <li><a href="#about">o mnie</a></li>
-                <li><a href="#skills">umiejętności</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contact">kontakt</a></li>
-            </ul>
-        </nav>
-        <div id="title">
-            <h1><span id="white-text">Jan</span> Nowak</h1>
-            <h2>Front-End Developer</h2>
+        <div class="parallax">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#about">o mnie</a></li>
+                            <li><a href="#skills">umiejętności</a></li>
+                            <li><a href="#portfolio">portfolio</a></li>
+                            <li><a href="#contact">kontakt</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+            <div id="title">
+                <h1><span class="white-text">Jan</span> Nowak</h1>
+                <h2>Front-End Developer</h2>
+            </div>
+
         </div>
     </header>
     <section id="about">
-        <h3><span id="black-text">O</span> mnie</h3>
-        <div id="about-left">
-            <img src="img/jan-nowak.jpg" alt="Jan Nowak">
-        </div>
-        <div id="about-right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem animi assumenda et temporibus illum voluptatem optio error, neque doloremque doloribus voluptatum ea tenetur ullam omnis? Perferendis, dicta, incidunt! Adipisci, deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, omnis consequatur quia eos esse, similique sapiente pariatur. Ullam nam dolore labore omnis adipisci, tempora nemo dolores, magni sunt deleniti neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste dolorum magnam porro cum nesciunt, dicta commodi hic esse ipsam perferendis eveniet excepturi fugiat? Iste consequuntur eius sint in voluptatem.</p>
+        <h3><span class="black-text">O</span> mnie</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="about-left" class="col-md-6">
+                    <img src="img/jan-nowak.jpg" alt="Jan Nowak">
+                </div>
+                <div id="about-right" class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem animi assumenda et temporibus illum voluptatem optio error, neque doloremque doloribus voluptatum ea tenetur ullam omnis? Perferendis, dicta, incidunt! Adipisci, deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, omnis consequatur quia eos esse, similique sapiente pariatur. Ullam nam dolore labore omnis adipisci, tempora nemo dolores, magni sunt deleniti neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste dolorum magnam porro cum nesciunt, dicta commodi hic esse ipsam perferendis eveniet excepturi fugiat? Iste consequuntur eius sint in voluptatem.</p>
+                </div>
+            </div>
         </div>
     </section>
     <section id="skills">
-        <h3><span id="black-text">Moje</span> umiejętności</h3>
+        <h3><span class="black-text">Moje</span> umiejętności</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, odio, earum. Quos impedit minima, laboriosam repellendus tenetur autem perferendis, dolorem quis ab unde alias nemo ullam cumque magni laudantium beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore perspiciatis veritatis illum aspernatur, dolor atque illo, voluptatum excepturi quaerat! </p>
-        <figure>
-            <img src="icons/html5.png" alt="HTML5">
-            <figcaption>HTML 5</figcaption>
-        </figure>
-        <figure>
-            <img src="icons/css3.png" alt="CSS3">
-            <figcaption>CSS3</figcaption>
-        </figure>
-        <figure>
-            <img src="icons/js.png" alt="Java Script">
-            <figcaption>JavaScript</figcaption>
-        </figure>
-        <figure>
-            <img src="icons/jquery.png" alt="jQuery">
-            <figcaption>jQuery</figcaption>
-        </figure>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <img src="icons/html5.png" alt="HTML5">
+                    <figcaption>HTML 5</figcaption>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="icons/css3.png" alt="CSS3">
+                    <figcaption>CSS3</figcaption>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="icons/js.png" alt="Java Script">
+                    <figcaption>JavaScript</figcaption>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="icons/jquery.png" alt="jQuery">
+                    <figcaption>jQuery</figcaption>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="portfolio">
-        <h3><span id="black-text">Moje</span> portfolio</h3>
-        <div id="item-1" class="floated">
-            <div class="item-mask">
-                <div class="item-mask-border">
-                    <div class="item-mask-text">
-                        <span class="item-title">Lorem ipsum</span><br><br> Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!<br><br><b>Wykorzystane technologie:</b><br> HTML5, CSS3, RWD, JavaScript, Boostrap<br><br>
-                        <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+        <h3><span class="black-text">Moje</span> portfolio</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div id="item-1" class="floated">
+                        <div class="item-mask">
+                            <div class="item-mask-border">
+                                <div class="item-mask-text">
+                                    <span class="item-title">Lorem ipsum</span><br><br> Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!<br><br><b>Wykorzystane technologie:</b><br> HTML5, CSS3, RWD, JavaScript, Bootstrap<br><br>
+                                    <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="item-2" class="floated">
-            <div class="item-mask">
-                <div class="item-mask-border">
-                    <div class="item-mask-text">
-                        <span class="item-title">Lorem ipsum</span><br><br> Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!<br><br><b>Wykorzystane technologie:</b><br> HTML5, CSS3, RWD, JavaScript, Boostrap<br><br>
-                        <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                <div class="col-md-6 col-lg-4">
+                    <div id="item-2" class="floated">
+                        <div class="item-mask">
+                            <div class="item-mask-border">
+                                <div class="item-mask-text">
+                                    <span class="item-title">Lorem ipsum</span><br><br> Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!<br><br><b>Wykorzystane technologie:</b><br> HTML5, CSS3, RWD, JavaScript, Bootstrap<br><br>
+                                    <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="item-3" class="floated">
-            <div class="item-mask">
-                <div class="item-mask-border">
-                    <div class="item-mask-text">
-                        <span class="item-title">Lorem ipsum</span><br><br> Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!<br><br><b>Wykorzystane technologie:</b><br> HTML5, CSS3, RWD, JavaScript, Boostrap<br><br>
-                        <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                <div class="col-md-12 col-lg-4">
+                    <div id="item-3" class="floated">
+                        <div class="item-mask">
+                            <div class="item-mask-border">
+                                <div class="item-mask-text">
+                                    <span class="item-title">Lorem ipsum</span><br><br> Opis projektu lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae praesentium, doloribus nulla. Minus ex beatae, sequi tempora laboriosam reiciendis quos distinctio aspernatur aperiam est quam ad architecto nisi rem, aut!<br><br><b>Wykorzystane technologie:</b><br> HTML5, CSS3, RWD, JavaScript, Bootstrap<br><br>
+                                    <i class="fa fa-link fa-2x" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact">
-        <div id="contact-data">
-            <h4><span id="name-text">Jan</span> Nowak</h4>
-            <p>ul. Mostowa 6/13<br> 31-061 Kraków<br><br> tel: 606 745 759<br> e-mail: <a href="mailto:example@example.com">example@example.com</a></p>
-            <div class="icon-box">
-                <i class="fa fa-facebook fa-lg fa-fw" aria-hidden="true"></i>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="contact-data" class="col-md-6">
+                    <h4><span id="name-text">Jan</span> Nowak</h4>
+                    <p>ul. Mostowa 6/13<br> 31-061 Kraków<br><br> tel: 606 745 759<br> e-mail: <a href="mailto:example@example.com">example@example.com</a></p>
+                    <div class="icon-box">
+                        <i class="fa fa-facebook fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-google-plus fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-twitter fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-linkedin fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div id="contact-form" class="col-md-6">
+                    <form action="https://formspree.io/blater@poczta.fm" method="POST">
+                        <input type="text" name="Imię" class="form-control" placeholder="Imię i nazwisko">
+                        <input type="email" name="email" class="form-control" placeholder="E-mail">
+                        <textarea name="Wiadomość" class="form-control" rows=8 placeholder="Treść wiadomości"></textarea>
+                        <input id="send-btn" type="submit" value="WYŚLIJ">
+                    </form>
+                </div>
             </div>
-            <div class="icon-box">
-                <i class="fa fa-google-plus fa-lg fa-fw" aria-hidden="true"></i>
-            </div>
-            <div class="icon-box">
-                <i class="fa fa-twitter fa-lg fa-fw" aria-hidden="true"></i>
-            </div>
-            <div class="icon-box">
-                <i class="fa fa-linkedin fa-lg fa-fw" aria-hidden="true"></i>
-            </div>
-        </div>
-        <div id="contact-form">
-            <form action="https://formspree.io/blater@poczta.fm" method="POST">
-                <input type="text" name="Imię" class="form-control" placeholder="Imię i nazwisko">
-                <input type="email" name="email" class="form-control" placeholder="E-mail">
-                <textarea name="Wiadomość" class="form-control" rows=8 placeholder="Treść wiadomości"></textarea>
-                <input type="submit" value="WYŚLIJ" id="send-btn">
-            </form>
         </div>
     </section>
     <footer>
         <div id="copyright">Copyright Ⓒ Jan Nowak</div>
     </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

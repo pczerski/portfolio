@@ -1,0 +1,11 @@
+/* Responsywność */
+
+
+/*  ABOUT  */
+
+@media screen and (max-width: 992px) {
+    #about-left,
+    #about-right {
+        width: 100%;
+    }
+}
