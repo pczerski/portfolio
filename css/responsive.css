@@ -8,4 +8,8 @@
     #about-right {
         width: 100%;
     }
+    #about-right {
+/*    Anulowanie flexa    */
+        display: initial;
+    }
 }

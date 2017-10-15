@@ -86,7 +86,7 @@ h4 {
 #main-header nav {
     background-color: transparent;
     border: none;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 #myNavbar ul li > a {
@@ -169,8 +169,6 @@ h4 {
 /* PORTFOLIO */
 #portfolio {
     text-align: center;
-/*  Likwidacja przerwy między itemami  */
-    //font-size: 0;
 }
 
 .floated {
@@ -200,12 +198,9 @@ h4 {
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-}
-
-.item-mask-border {
+    right: 0;    
     margin: 10px;
-    border: 1px solid aliceblue;
+    border: 1px solid aliceblue;   
 }
 
 .item-mask-text {
